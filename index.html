@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Mind Garden — 생각하고, 실험하고, 정리한 개인 지식 로드맵">
+  <title>Mind Garden</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell nav">
+    <a class="brand" href="./index.html"><span class="brand-mark">✦</span>MIND GARDEN</a>
+    <nav class="nav-links"><a href="#garden">Garden</a><a href="#roadmap">Roadmap</a><a href="./food/index.html">Food</a></nav>
+  </div>
+</header>
+<main>
+  <section class="hero shell">
+    <div class="eyebrow">Personal knowledge garden</div>
+    <h1>생각을 저장하지 않고,<br>계속 자라게 만든다.</h1>
+    <p>관심사, 실험, 구매 이유, 건강 루틴과 레시피를 서로 연결해 두는 개인 지식 지도.</p>
+    <div class="hero-actions"><a class="btn primary" href="#garden">지식 둘러보기</a><a class="btn" href="./food/index.html">Food 열기 →</a></div>
+  </section>
+
+  <section class="section shell" id="garden">
+    <div class="section-head"><div><div class="eyebrow">Garden branches</div><h2>지식 분야</h2></div><p>각 분야는 독립된 폴더이면서 서로 연결되는 생각의 가지입니다.</p></div>
+    <div class="search-wrap"><input class="search" data-search-input type="search" placeholder="내 생각 검색하기 — 예: 보리, 샤브샤브, 압력밥솥" aria-label="지식 검색"></div>
+    <div class="grid">
+      <a class="card" data-search-item data-search="food 음식 레시피 영양 샤브샤브 보리 압력밥솥" href="./food/index.html"><div class="icon">🍽️</div><h3>Food</h3><p>먹는 방식, 레시피, 식재료와 조리기구를 연결합니다.</p><div class="card-meta"><span class="status evergreen">2 notes</span><span class="tag">Active</span></div></a>
+      <article class="card muted-card" data-search-item data-search="health 건강 수면 운동 노화 뇌"><div class="icon">🧠</div><h3>Health</h3><p>수면, 운동, 대사, 노화와 몸의 반응을 정리할 공간.</p><div class="card-meta"><span class="status seed">Seed</span></div></article>
+      <article class="card muted-card" data-search-item data-search="projects 프로젝트 제작 제품 시스템"><div class="icon">🛠️</div><h3>Projects</h3><p>만들고 있는 제품과 시스템의 아이디어·설계·결정을 기록합니다.</p><div class="card-meta"><span class="status seed">Seed</span></div></article>
+      <article class="card muted-card" data-search-item data-search="learning 공부 책 연구"><div class="icon">📚</div><h3>Learning</h3><p>책, 연구, 학습 내용이 실제 생각으로 이어지는 공간.</p><div class="card-meta"><span class="status seed">Seed</span></div></article>
+      <article class="card wide muted-card" data-search-item data-search="ideas 아이디어 생각 seed growing evergreen"><div class="icon">💡</div><h3>Ideas</h3><p>아직 결론이 나지 않은 생각을 Seed로 남기고, 조사하면서 Growing, 정리되면 Evergreen으로 키웁니다.</p></article>
+    </div>
+    <div class="empty-search" data-search-empty>검색 결과가 없습니다.</div>
+  </section>
+
+  <section class="section shell">
+    <div class="section-head"><div><div class="eyebrow">Recently updated</div><h2>최근 정리</h2></div></div>
+    <div class="grid">
+      <a class="card" data-search-item data-search="샤브샤브 소고기 찰보리 백미 귀리 죽 14:10" href="./food/recipe-shabu-shabu.html"><div class="icon">🥘</div><h3>레시피 · 샤브샤브</h3><p>소고기와 채소를 먹고 찰보리 50 / 백미 40 / 귀리 10 혼합곡 죽으로 마무리.</p><div class="card-meta"><span class="tag">Food</span><span class="tag">Recipe</span><span class="status evergreen">Evergreen</span></div></a>
+      <a class="card" data-search-item data-search="쿠첸 123 압력밥솥 2.2기압 123도 잡곡 19분" href="./food/pressure-rice-cooker-2-2.html"><div class="icon">🍚</div><h3>조리기구 · 2.2기압 압력밥솥</h3><p>보리·귀리 혼합밥을 빠르게 준비하기 위한 쿠첸 123 밥솥 정리.</p><div class="card-meta"><span class="tag">Food</span><span class="tag">Tool</span><span class="status evergreen">Evergreen</span></div></a>
+    </div>
+  </section>
+
+  <section class="section shell" id="roadmap">
+    <div class="roadmap"><div class="eyebrow" style="color:#9fc7a7">Knowledge roadmap</div><h2 style="font-size:36px;margin-top:8px">생각은 링크로 자란다.</h2><div class="roadmap-row"><span class="node">Health</span><span class="arrow">→</span><span class="node">Nutrition</span><span class="arrow">→</span><span class="node">Food</span><span class="arrow">→</span><span class="node">Shabu-shabu</span><span class="arrow">→</span><span class="node">Barley</span><span class="arrow">→</span><span class="node">Pressure Cooker</span></div><div class="stats"><div class="stat"><strong>2</strong><span>Evergreen notes</span></div><div class="stat"><strong>1</strong><span>Active branch</span></div><div class="stat"><strong>5</strong><span>Planned branches</span></div></div></div>
+  </section>
+</main>
+<footer class="footer"><div class="shell">Mind Garden · <span data-year></span> · Grow ideas into connected knowledge.</div></footer>
+<script src="./app.js"></script>
+</body>
+</html>
